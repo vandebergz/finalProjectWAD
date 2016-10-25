@@ -92,3 +92,55 @@ label.active{
   line-height: 22px;
   padding: 14px 16px;
 }
+
+.picker__date-display {
+  text-align: center;
+  background-color: #2196F3;
+
+  color: #fff;
+  padding-bottom: 15px;
+  font-weight: 300;
+}
+
+.picker__weekday-display {
+  background-color: #1E88E5;
+  padding: 10px;
+  font-weight: 200;
+  letter-spacing: .5;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.picker__close, .picker__today, .picker__day.picker__day--today {
+  font-size: 1.1rem;
+  padding: 0 1rem;
+  color: #2196F3;
+}
+
+.picker__day--selected, .picker__day--selected:hover, .picker--focused .picker__day--selected {
+	background-color: #2196F3;
+}
+
+.picker__nav--prev:hover,
+.picker__nav--next:hover {
+  background: #90CAF9;
+}
+
+.picker__day--selected.picker__day--outfocus,
+.picker__day--selected:hover.picker__day--outfocus,
+.picker--focused .picker__day--selected.picker__day--outfocus {
+  background-color: #90CAF9;
+}
+
+[type="radio"]:checked + label:after {
+  border-radius: 50%;
+  border: 2px solid #2196F3;
+  background-color: #2196F3;
+  z-index: 0;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.input-field .prefix.active {
+  color: #2196F3;
+}
