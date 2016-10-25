@@ -2,16 +2,6 @@
 <html>
 <head>
   <title>Halaman Registrasi</title>
-<style>
-fieldset{
-  background-color: #33A8FF;
-}
-th, td {
-    padding: 5px;
-    text-align: left;
-    vertical-align: top;
-}
-</style>
 <!-- CSS -->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -20,8 +10,8 @@ th, td {
 <body class="page-login">
   <div class="center">
     <div class="card bordered z-depth-2" style="margin:0% auto; max-width:400px;">
-      <div class="card-header">
-        <h3 style="color:white">ACCOUNT REGISTRATION</h3>
+      <div class="card-header blue">
+        <span class="text-lg text-bold text-primary" style="color:white">ACCOUNT REGISTRATION</span>
       </div>
       <div class="card-content">
         <form>
@@ -73,7 +63,7 @@ th, td {
             </p>
           </div>
           <div class="file-field input-field">
-     <div class="btn">
+     <div class="btn blue">
        <span>File</span>
        <input type="file">
      </div>
@@ -88,12 +78,9 @@ th, td {
           <div class="input-field col s12">
             <input id="password" type="password" class="validate">
             <label for="password">Password</label>
-            <div class="card-content clearfix">
-              <div class="row">
+          <div class="row">
                 <button type="button" id="login" name="login_button" class="btn blue-grey right waves-effect waves-light white-text" onclick="valUser()">Register</button>
-              </div>
-            </div>
-
+          </div>
         </form>
       </div>
     </div>

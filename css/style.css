@@ -18,6 +18,7 @@
     display: table-cell;
     vertical-align: middle;
     padding-top: 44px;
+		padding-bottom: 60px;
     text-align: inherit;
 }
 .card .card-header {
@@ -39,16 +40,16 @@
 }
 .no-shadow:hover{
 	box-shadow: none;
-} 
-input[type=text], 
-input[type=password],  
-input[type=email], 
-input[type=url], 
-input[type=time], 
-input[type=date], 
-input[type=datetime-local], 
-input[type=tel], 
-input[type=number], 
+}
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=time],
+input[type=date],
+input[type=datetime-local],
+input[type=tel],
+input[type=number],
 input[type=search] {
 	border: 1px solid #ddd;
 	padding: 0px 10px;
@@ -71,4 +72,23 @@ label.active{
 .toast span {
     text-align: center;
     width: 100%;
+}
+
+/* CHANGES MADE FROM MASTER */
+
+[type="checkbox"].filled-in:checked + label:after {
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #2196F3;
+  background-color: #2196F3;
+  z-index: 0;
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+  font-size: 16px;
+  color: #2196F3;
+  display: block;
+  line-height: 22px;
+  padding: 14px 16px;
 }
